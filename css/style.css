@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*HEADER*/
+header {
+    background-color: rgb(23, 203, 216);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 25vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    padding: 5px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 7px;
+}
+header nav ul li a {
+    margin: 20px;
+    color: blanchedalmond;
+    font-family: cursive;
+}
+header nav ul li a {
+    text-decoration: none;
+}
+.hero {
+    width: 100%;
+    height: 25vh;
+    background-color: rgba(23, 203, 216, 0.568);
+    padding: 5px;
+}
+.hero .parrafo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.hero .parrafo h2 {
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+}
+.hero .parrafo h2 span {
+    color: rgb(23, 203, 216);
+}
+.hero .parrafo p {
+    margin-top: 5px;
+    width: 100%;
+    font-family: cursive;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 80%;
+    margin-left:  120px ;
+
+}
+.productos  {
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 300px;
+}
+.productos h2 {
+    text-align: center;
+    background-color:rgb(23, 203, 216);
+    font-family: cursive;
+    font-size: 20px;
+}
+.productos .tarjetitas {
+    text-align: center;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.productos .tarjetitas div img{
+    width: 250px;
+    height: 200px;
+    border: 2px solid rgb(23, 203, 216);
+    border-radius: 15px;
+    margin-top: 20px;   
+}
+.productos .tarjetitas div a {
+    color: blanchedalmond;
+    text-decoration: none;
+}
+.productos .tarjetitas h4 {
+    background-color: rgba(23, 203, 216, 0.63);
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.whatsapp img {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 35px;
+}
+.piedepagina .mapa{
+
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(23, 203, 216);
+}
+.piedepagina .mapa div iframe {
+    width: 300px;
+    height: 160px; 
+    padding: 10px;
+}
+.titulo_pie{
+    font-family: cursive;
+    color: blanchedalmond;
+    margin-right:30px;
+}
+.piedepagina .redes img {
+    width: 30px;
+    height: 30px;
+}
+/*BOOSTRAP*/
+.carousel-inner {
+    height: 60vh; 
+    background-color: rgb(23, 203, 216);
+}
+.carousel-inner div img {
+    height: 55vh;
+    width: 100%;
+}
+/*GRID_CONTAINER*/
+.grid_container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);/*Corregir seccion para que no se salga del contenedor padre*/
+    grid-auto-rows: 150px;
+    gap: 5px;  
+    padding: 5px;
+    background-color: rgb(23, 203, 216);
+
+}
+.grid_container div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.cuadro {
+    position: relative;
+}
+.cuadro h4 {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: blanchedalmond;
+    background-color: rgba(17, 200, 224, 0.507);
+    width: 100%;
+}
+.img-1{
+    grid-column: span 2;
+}
+.img-2{
+    grid-row: span 2;
+}
+.img-5{
+    grid-row: span 2;
+}
+.img-8{
+    grid-column: span 2;
+}
+
+/*MEDIA_QUERYS*/
+@media screen and (max-width: 984px) {
+    .hero {
+        width: 100%;
+        height: 25vh;
+    }
+}
+@media screen and (max-width: 837px){
+.productos  {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 800px;
+}
+}
+@media screen and (max-width: 810px){ 
+    .productos .tarjetitas {
+        text-align: center;
+        justify-content: space-around; 
+        align-items: center;
+        flex-direction: column;
+    
+    }
+}
+@media screen and (max-width: 732px) {
+    .hero {
+        width: 100%;
+        height: 35vh;
+    }
+}
+@media screen and (max-width: 497px) {
+    .hero {
+        width: 100%;
+        height: 45vh;
+    }
+}
+@media screen and (max-width: 494px) {
+    header {
+        background-color: rgb(23, 203, 216);
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        height: 300px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+}
+}
+@media screen and (max-width: 490px) {
+    header {
+        background-color: rgb(23, 203, 216);
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        height: 300px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+}
+}
+@media screen and (max-width: 438px) {
+    .piedepagina .mapa {
+        width: 100%;
+        height: 500px;
+        flex-direction: column;
+}
+}
+@media screen and (max-width: 438px) {
+    .piedepagina .mapa div iframe {
+        width: 250px;
+        height: 250px;
+}
+}
+@media screen and (max-width: 423px) {
+    .grid_container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);/*Corregir seccion para que no se salga del contenedor padre*/
+        grid-auto-rows: 150px;
+        gap: 5px;  
+        padding: 5px;
+        margin-top: 5px;
+    
+    }
+}
+
+@media screen and (max-width: 378px) {
+    header nav ul {
+        list-style: none;
+        flex-direction: column;
+        margin-top: 7px;
+    }   
+}
+@media screen and (max-width: 371px) {
+    .hero {
+        width: 100%;
+        height: 55vh;
+    }
+}
+@media screen and (max-width: 331px){
+    .grid_container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2,0.5fr);/*Corregir seccion para que no se salga del contenedor padre*/
+        grid-auto-rows: 100px;
+        gap: 5px;  
+        padding: 5px;
+        margin-top: 5px;
+    
+    }
+}
+@media screen and (max-width: 319px) {
+    .hero {
+        width: 100%;
+        height: 70vh;
+    }
+}
+/*Pseudoclases*/
+
+.productos .tarjetitas h4:hover {
+    background-color: rgba(145, 23, 216, 0.63);
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.cuadro h4:hover {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: rgb(44, 43, 41);
+    background-color: rgba(145, 23, 216, 0.63);
+    width: 100%;
+}
+.hero .parrafo h2:hover {
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(145, 23, 216);
+}
+.hero .parrafo h2 span:hover {
+    color: rgba(145, 23, 216);
+}
+
+/*NOSOTROS*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+    }
+.medios {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);/*Corregir seccion para que no se salga del contenedor padre*/
+    grid-auto-rows: 150px;
+    gap: 5px;  
+    padding: 5px;
+    background-color: rgb(23, 203, 216);
+
+}
+.medios div iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.video {
+    position: relative;
+}
+.video {
+    position: relative;
+}
+.video h4 {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: blanchedalmond;
+    background-color: rgba(17, 200, 224, 0.507);
+    width: 100%;
+}
+.recuadro-1{
+    grid-column: span 2;
+}
+.recuadro-2{
+    grid-row: span 2;
+}
+.recuadro-3{
+    grid-row: span 2;
+}
+.recuadro-4{
+    grid-column: span 2;
+}
+.pienosotros {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(23, 203, 216);
+}
+.pienosotros div a img {
+    width: 30px;
+    height: 30px;
+}
