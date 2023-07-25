@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Jean García Acuña</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+<h3 align="center">A passionate frontend developer from Colombia</h3>
 
 - 🔭 I’m currently working on [CottonTails](file:///C:/Users/jacun/OneDrive/Escritorio/Coder-Pry-jean/index.html)
 
