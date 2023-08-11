@@ -1,0 +1,614 @@
+/* El nombre de archivo en la carpeta .css y la carpeta .scss no debe coincidir nunca ya que el scss compila sobre el css que tengo si dejo los mismos nombres en .css como por ejemplo style.css y otro style.css que es donde venia trabajando, se borrara y actualizara al contenido .scss, entonces es obligatorio cambiar los nombres mientras hago cambios con el .scss es como tener un backup al mismo tiempo mientras elaboro las acrualizaciones con .scss.*/
+/*sin embargo hay que tener en cuenta que a la vez debo tener un archivo .css y un .scss con el mismo nombre para hacer las actualizaciones en el instante que vaya modificando el .scss*/
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  font-family: cursive; }
+
+header {
+  background-color: #17cbd8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 25vh;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    padding: 5px; }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 7px; }
+    header nav ul li a {
+      margin: 10px;
+      color: blanchedalmond;
+      font-family: cursive;
+      text-decoration: none; }
+
+.hero {
+  width: 100%;
+  height: 25vh;
+  background-color: rgba(23, 203, 216, 0.568);
+  padding: 5px; }
+  .hero .parrafo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .hero .parrafo h2 {
+      font-family: cursive;
+      font-size: 30px;
+      text-align: center; }
+      .hero .parrafo h2 span {
+        color: #9117d8; }
+    .hero .parrafo p {
+      margin-top: 5px;
+      width: 100%;
+      font-family: cursive;
+      font-size: 20px;
+      color: black;
+      text-align: center;
+      width: 80%;
+      margin-left: 50px; }
+
+.productos {
+  background-color: blanchedalmond;
+  width: 100%;
+  height: 300px; }
+  .productos h2 {
+    text-align: center;
+    background-color: #17cbd8;
+    font-family: cursive;
+    font-size: 20px; }
+  .productos .tarjetitas {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .productos .tarjetitas div img {
+      width: 250px;
+      height: 200px;
+      border: 2px solid #17cbd8;
+      border-radius: 15px;
+      margin-top: 20px; }
+    .productos .tarjetitas div a {
+      color: blanchedalmond;
+      text-decoration: none; }
+    .productos .tarjetitas h4 {
+      background-color: rgba(23, 203, 216, 0.63);
+      border-radius: 10px;
+      font-family: cursive;
+      font-size: 20px;
+      margin-top: 5px; }
+
+.whatsapp img {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 100px;
+  right: 35px; }
+
+.piedepagina .mapa {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #17cbd8; }
+  .piedepagina .mapa div iframe {
+    width: 300px;
+    height: 160px;
+    padding: 10px; }
+  .piedepagina .mapa .redes img {
+    width: 30px;
+    height: 30px; }
+
+.piedepagina .titulo_pie {
+  font-family: cursive;
+  color: blanchedalmond;
+  margin-right: 30px; }
+
+/*BOOSTRAP*/
+.carousel-inner {
+  height: 60vh;
+  background-color: #17cbd8; }
+  .carousel-inner div img {
+    height: 55vh;
+    width: 100%; }
+
+.grid_container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  /*Corregir seccion para que no se salga del contenedor padre*/
+  grid-auto-rows: 150px;
+  gap: 5px;
+  padding: 5px;
+  background-color: #17cbd8; }
+  .grid_container div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.cuadro {
+  position: relative; }
+  .cuadro h4 {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: blanchedalmond;
+    background-color: rgba(17, 200, 224, 0.507);
+    width: 100%; }
+
+.img-1 {
+  grid-column: span 2; }
+
+.img-2 {
+  grid-row: span 2; }
+
+.img-5 {
+  grid-row: span 2; }
+
+.img-8 {
+  grid-column: span 2; }
+
+/*PSEUDOCLASES*/
+.productos {
+  transition: width 3s steps(5, end); }
+  .productos .tarjetitas {
+    transition: width 3s steps(5, end); }
+    .productos .tarjetitas h4:hover {
+      background-color: rgba(145, 23, 216, 0.63);
+      border-radius: 10px;
+      font-family: cursive;
+      font-size: 20px;
+      margin-top: 5px; }
+
+.cuadro {
+  transition: width 3s steps(5, end); }
+  .cuadro h4 {
+    transition: width 3s steps(5, end); }
+    .cuadro h4:hover {
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      color: #2c2b29;
+      background-color: rgba(145, 23, 216, 0.63);
+      width: 100%; }
+
+.hero .parrafo h2:hover {
+  font-family: cursive;
+  font-size: 30px;
+  text-align: center;
+  color: rgba(216, 78, 23, 0.774); }
+
+.hero .parrafo h2 span:hover {
+  color: rgba(216, 84, 23, 0.774); }
+
+/*NOSOTROS*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25vh;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  .navbar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px; }
+
+.nosotros {
+  background-image: url(../img/nosotros.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  flex-direction: column; }
+  .nosotros h2 {
+    color: aliceblue;
+    font-family: cursive;
+    font-size: 20px;
+    padding: 5px; }
+  .nosotros p {
+    color: aliceblue;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: left;
+    width: 50%;
+    padding-left: 5px;
+    margin-top: 30px; }
+
+.pienosotros {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #17cbd8; }
+  .pienosotros div a img {
+    width: 30px;
+    height: 30px; }
+
+.navbarservicios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25vh;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  .navbarservicios img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px; }
+
+.servicios {
+  background-color: blanchedalmond;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .servicios p {
+    color: black;
+    font-family: cursive;
+    font-size: 20px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    text-align: center; }
+
+.medios {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  /*Corregir seccion para que no se salga del contenedor padre*/
+  grid-auto-rows: 150px;
+  gap: 5px;
+  padding: 5px;
+  background-color: #17cbd8; }
+  .medios div iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.video {
+  position: relative; }
+  .video h4 {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: blanchedalmond;
+    background-color: rgba(17, 200, 224, 0.507);
+    width: 100%; }
+
+.recuadro-1 {
+  grid-column: span 2; }
+
+.recuadro-2 {
+  grid-row: span 2; }
+
+.recuadro-3 {
+  grid-row: span 2; }
+
+.recuadro-4 {
+  grid-column: span 2; }
+
+.pieservicios {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #17cbd8; }
+  .pieservicios div a img {
+    width: 30px;
+    height: 30px; }
+
+/*OFERTAS*/
+.parrafo-ofertas {
+  background-color: blanchedalmond;
+  height: 15vh;
+  text-align: center; }
+  .parrafo-ofertas p {
+    font-family: cursive;
+    font-size: 20px;
+    color: blanchedalmond;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(145, 23, 216, 0.877); }
+
+.ofertas {
+  background-color: blanchedalmond;
+  width: 100%;
+  height: 300px; }
+  .ofertas h2 {
+    text-align: center;
+    background-color: #17cbd8;
+    font-family: cursive;
+    font-size: 20px; }
+  .ofertas .tarjetas {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .ofertas .tarjetas div img {
+      width: 250px;
+      height: 200px;
+      border: 2px solid #17cbd8;
+      border-radius: 15px;
+      margin-top: 20px; }
+    .ofertas .tarjetas div a {
+      color: blanchedalmond;
+      text-decoration: none; }
+    .ofertas .tarjetas h4 {
+      background-color: rgba(23, 203, 216, 0.63);
+      border-radius: 10px;
+      font-family: cursive;
+      font-size: 20px;
+      margin-top: 5px; }
+
+/*CONTACTENOS*/
+.navbarcontacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25vh;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  .navbarcontacto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px; }
+
+/*BOOSTRAP CONTACTENOS*/
+.titulo-formulario {
+  text-align: center;
+  background-color: rgba(145, 23, 216, 0.774);
+  font-family: cursive;
+  font-size: 20px; }
+  .titulo-formulario h2 {
+    color: blanchedalmond;
+    height: 7vh; }
+
+.formulario {
+  width: 50%;
+  justify-content: space-between;
+  border: 2px solid rgba(145, 23, 216, 0.774);
+  padding: 10px;
+  align-items: center;
+  margin-left: 350px;
+  margin-bottom: 10px;
+  background-color: blanchedalmond; }
+
+footer .piedepagina .mapa {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #17cbd8; }
+  footer .piedepagina .mapa div iframe {
+    width: 300px;
+    height: 160px;
+    padding: 10px; }
+  footer .piedepagina .mapa .titulo_pie {
+    font-family: cursive;
+    color: blanchedalmond;
+    margin-right: 30px; }
+  footer .piedepagina .mapa .redes img {
+    width: 30px;
+    height: 30px; }
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    width: 100%;
+    height: 20vh; } }
+
+@media screen and (max-width: 984px) {
+  .hero {
+    width: 100%;
+    height: 30vh; } }
+
+@media screen and (max-width: 813px) {
+  .productos {
+    height: 900px; } }
+
+@media screen and (max-width: 813px) {
+  .productos .tarjetitas {
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; } }
+
+@media screen and (max-width: 732px) {
+  .hero {
+    width: 100%;
+    height: 40vh; } }
+
+@media screen and (max-width: 615px) {
+  .hero {
+    width: 100%;
+    height: 45vh; } }
+
+@media screen and (max-width: 588px) {
+  .hero {
+    width: 100%;
+    height: 50vh; } }
+
+@media screen and (max-width: 572px) {
+  header nav ul {
+    list-style: none;
+    flex-direction: column;
+    margin-top: 7px; } }
+
+@media screen and (max-width: 494px) {
+  header {
+    background-color: #17cbd8;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 300px;
+    position: sticky;
+    top: 0;
+    z-index: 1; } }
+
+@media screen and (max-width: 490px) {
+  header {
+    background-color: #17cbd8;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 300px;
+    position: sticky;
+    top: 0;
+    z-index: 1; } }
+
+@media screen and (max-width: 476px) {
+  .hero {
+    width: 100%;
+    height: 60vh; } }
+
+@media screen and (max-width: 450px) {
+  .hero {
+    width: 100%;
+    height: 70vh; } }
+
+@media screen and (max-width: 424px) {
+  .hero {
+    width: 100%;
+    height: 75vh; } }
+
+@media screen and (max-width: 423px) {
+  .grid_container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    /*Corregir seccion para que no se salga del contenedor padre*/
+    grid-auto-rows: 150px;
+    gap: 5px;
+    padding: 5px;
+    margin-top: 5px; } }
+
+/*MEDIA QUERY PIE DE PAGINA*/
+@media screen and (max-width: 411px) {
+  .hero {
+    width: 100%;
+    height: 80vh; } }
+
+@media screen and (max-width: 378px) {
+  header nav ul {
+    list-style: none;
+    flex-direction: column;
+    margin-top: 7px; } }
+
+@media screen and (max-width: 371px) {
+  .hero {
+    width: 100%;
+    height: 85vh; } }
+
+@media screen and (max-width: 331px) {
+  .grid_container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 0.5fr);
+    /*Corregir seccion para que no se salga del contenedor padre*/
+    grid-auto-rows: 100px;
+    gap: 5px;
+    padding: 5px;
+    margin-top: 5px; } }
+
+@media screen and (max-width: 319px) {
+  .hero {
+    width: 100%;
+    height: 90vh; } }
+
+@media screen and (max-width: 312px) {
+  .hero {
+    width: 100%;
+    height: 95vh; } }
+
+/*MEDIA QUERYS NOSOTROS*/
+/*MEDIA QUERYS SERVICIOS*/
+@media screen and (max-width: 892px) {
+  .servicios {
+    height: 200px; } }
+
+@media screen and (max-width: 500px) {
+  .navbarservicios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+    position: sticky;
+    top: 0;
+    z-index: 1; } }
+
+@media screen and (max-width: 495px) {
+  .navbarservicios {
+    height: 45vh; } }
+
+@media screen and (max-width: 495px) {
+  .navbarservicios {
+    height: 55vh; } }
+
+@media screen and (max-width: 400px) {
+  .navbarservicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35vh;
+    position: sticky;
+    top: 0;
+    z-index: 1; } }
+
+@media screen and (max-width: 350px) {
+  .servicios {
+    height: 350px; } }
+
+@media screen and (max-width: 250px) {
+  .pieservicios {
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #17cbd8; } }
+
+/*MEDIA QUERYS OFERTAS*/
+@media screen and (max-width: 764px) {
+  .ofertas {
+    height: 500px; } }
+
+@media screen and (max-width: 764px) {
+  .ofertas .tarjetas {
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    display: flex; } }
+
+@media screen and (max-width: 752px) {
+  .parrafo-ofertas {
+    height: 150px; } }

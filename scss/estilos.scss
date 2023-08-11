@@ -1,0 +1,8 @@
+/* El nombre de archivo en la carpeta .css y la carpeta .scss no debe coincidir nunca ya que el scss compila sobre el css que tengo si dejo los mismos nombres en .css como por ejemplo style.css y otro style.css que es donde venia trabajando, se borrara y actualizara al contenido .scss, entonces es obligatorio cambiar los nombres mientras hago cambios con el .scss es como tener un backup al mismo tiempo mientras elaboro las acrualizaciones con .scss.*/
+/*sin embargo hay que tener en cuenta que a la vez debo tener un archivo .css y un .scss con el mismo nombre para hacer las actualizaciones en el instante que vaya modificando el .scss*/
+@import "./base/generales";
+@import "./base/variables";
+@import "./components/header";
+@import "./components/layouts";
+@import "./components/footer";
+@import "./base/mediaquerys";

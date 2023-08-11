@@ -1,0 +1,228 @@
+@media screen and (max-width: 1200px){
+    .hero {
+        width: 100%;
+        height: 20vh;
+    }
+}
+@media screen and (max-width: 984px) {
+    .hero {
+        width: 100%;
+        height: 30vh;
+    }
+}
+@media screen and (max-width: 813px){
+    .productos{
+        height: 900px;
+    }
+}
+@media screen and (max-width: 813px){ 
+    .productos .tarjetitas {
+        text-align: center;
+        justify-content: space-around; 
+        align-items: center;
+        flex-direction: column;    
+    }
+}
+
+@media screen and (max-width: 732px) {
+    .hero {
+        width: 100%;
+        height: 40vh;
+    }
+}
+@media screen and (max-width: 615px) {
+    .hero {
+        width: 100%;
+        height: 45vh;
+    }
+}
+@media screen and (max-width: 588px) {
+    .hero{
+        width: 100%;
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 572px) {
+    header nav ul {
+        list-style: none;
+        flex-direction: column;
+        margin-top: 7px;
+    }
+}
+
+@media screen and (max-width: 494px) {
+    header {
+        background-color: rgb(23, 203, 216);
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        height: 300px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+}
+}
+@media screen and (max-width: 490px) {
+    header {
+        background-color: rgb(23, 203, 216);
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        height: 300px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+}
+}
+@media screen and (max-width: 476px) {
+    .hero{
+        width: 100%;
+        height: 60vh;
+    }
+}
+@media screen and (max-width: 450px) {
+    .hero {
+        width: 100%;
+        height: 70vh;
+    }
+}
+@media screen and (max-width: 424px) {
+    .hero {
+        width: 100%;
+        height: 75vh;
+    }
+}
+@media screen and (max-width: 423px) {
+    .grid_container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);/*Corregir seccion para que no se salga del contenedor padre*/
+        grid-auto-rows: 150px;
+        gap: 5px;  
+        padding: 5px;
+        margin-top: 5px;
+    
+    }
+}
+/*MEDIA QUERY PIE DE PAGINA*/
+@media screen and (max-width: 411px) {
+    .hero {
+        width: 100%;
+        height: 80vh;
+    }
+}
+@media screen and (max-width: 378px) {
+    header nav ul {
+        list-style: none;
+        flex-direction: column;
+        margin-top: 7px;
+    }   
+}
+@media screen and (max-width: 371px) {
+    .hero {
+        width: 100%;
+        height: 85vh;
+    }
+}
+@media screen and (max-width: 331px){
+    .grid_container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2,0.5fr);/*Corregir seccion para que no se salga del contenedor padre*/
+        grid-auto-rows: 100px;
+        gap: 5px;  
+        padding: 5px;
+        margin-top: 5px;
+    
+    }
+}
+@media screen and (max-width: 319px) {
+    .hero {
+        width: 100%;
+        height: 90vh;
+    }
+}
+@media screen and (max-width: 312px) {
+    .hero {
+        width: 100%;
+        height: 95vh;
+    }
+}
+/*MEDIA QUERYS NOSOTROS*/
+/*MEDIA QUERYS SERVICIOS*/
+@media screen and (max-width: 892px) {
+    .servicios{
+        height: 200px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .navbarservicios {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30vh;
+        position: sticky;
+        top: 0;
+        z-index: 1;   
+    }
+}
+@media screen and (max-width: 495px) {
+    .navbarservicios{
+        height: 45vh;
+    }
+}
+@media screen and (max-width: 495px) {
+    .navbarservicios{
+        height: 55vh;
+    }
+}
+@media screen and (max-width: 400px) {
+    .navbarservicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 35vh;
+        position: sticky;
+        top: 0;
+        z-index: 1;   
+    }
+}
+@media screen and (max-width: 350px) {
+    .servicios{
+        height: 350px;
+    }
+}
+@media screen and (max-width: 250px) {
+    .pieservicios {
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(23, 203, 216); 
+    }
+}
+/*MEDIA QUERYS OFERTAS*/
+
+@media screen and (max-width: 764px){
+    .ofertas{
+        height: 500px;
+    }
+}
+@media screen and (max-width: 764px){ 
+    .ofertas .tarjetas {
+        text-align: center;
+        justify-content: space-around; 
+        align-items: center;
+        flex-direction: column;
+        display: flex;    
+    }
+}
+@media screen and (max-width: 752px) {
+    .parrafo-ofertas{
+    height: 150px;
+}
+}

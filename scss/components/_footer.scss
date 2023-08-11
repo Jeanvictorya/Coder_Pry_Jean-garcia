@@ -1,0 +1,31 @@
+footer{
+    .piedepagina{
+        .mapa{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: rgb(23, 203, 216);
+            div{
+                iframe{
+                    width: 300px;
+                    height: 160px; 
+                    padding: 10px;
+                }
+            }
+            .titulo_pie{
+                font-family: cursive;
+                color: blanchedalmond;
+                margin-right:30px;
+            }
+            .redes{
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+header{
+    background-color: rgb(23, 203, 216);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 25vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        padding: 5px;
+    }
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            margin-top: 7px;
+            li{
+                a{
+                    margin: 10px;
+                    color: blanchedalmond;
+                    font-family: cursive;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

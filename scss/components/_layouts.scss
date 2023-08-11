@@ -1,0 +1,442 @@
+.hero{
+    width: 100%;
+    height: 25vh;
+    background-color: rgba(23, 203, 216, 0.568);
+    padding: 5px;
+    .parrafo{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+        h2{
+            font-family: cursive;
+            font-size: 30px;
+            text-align: center;
+            span{
+                color:  rgb(145, 23, 216);
+            }
+        }
+        p{
+            margin-top: 5px;
+            width: 100%;
+            font-family: cursive;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            width: 80%;
+            margin-left:  50px ;
+        }
+        }
+    }
+.productos{
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 300px;
+    h2{
+        text-align: center;
+        background-color:rgb(23, 203, 216);
+        font-family: cursive;
+        font-size: 20px;
+    }
+    .tarjetitas{
+        text-align: center;
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+        div{
+            img{
+                width: 250px;
+                height: 200px;
+                border: 2px solid rgb(23, 203, 216);
+                border-radius: 15px;
+                margin-top: 20px;   
+            }
+            a{
+                color: blanchedalmond;
+                text-decoration: none;
+            }
+        }
+        h4{
+            background-color: rgba(23, 203, 216, 0.63);
+            border-radius: 10px;
+            font-family: cursive;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+    }
+}
+.whatsapp{
+    img{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 100px;
+        right: 35px;
+    }
+}
+.piedepagina{
+    .mapa{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: rgb(23, 203, 216);
+        div{
+            iframe{
+                width: 300px;
+                height: 160px; 
+                padding: 10px;
+            }
+        }
+        .redes{
+            img{
+                width: 30px;
+                height: 30px;
+            }
+    }
+}
+
+.titulo_pie{
+    font-family: cursive;
+    color: blanchedalmond;
+    margin-right:30px;
+    }
+}
+/*BOOSTRAP*/
+.carousel-inner{
+    height: 60vh; 
+    background-color: rgb(23, 203, 216);
+    div{
+        img{
+            height: 55vh;
+            width: 100%;
+        }
+    }
+}
+.grid_container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);/*Corregir seccion para que no se salga del contenedor padre*/
+    grid-auto-rows: 150px;
+    gap: 5px;  
+    padding: 5px;
+    background-color: rgb(23, 203, 216);
+    div{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.cuadro{
+    position: relative;
+    h4{
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        color: blanchedalmond;
+        background-color: rgba(17, 200, 224, 0.507);
+        width: 100%;
+    }
+}
+.img-1{
+    grid-column: span 2;
+}
+.img-2{
+    grid-row: span 2;
+}
+.img-5{
+    grid-row: span 2;
+}
+.img-8{
+    grid-column: span 2;
+}
+
+/*PSEUDOCLASES*/
+.productos{
+    transition: width 3s steps(5, end);
+    .tarjetitas{
+        transition: width 3s steps(5, end);
+        h4{
+        &:hover{
+            background-color: rgba(145, 23, 216, 0.63);
+            border-radius: 10px;
+            font-family: cursive;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+        }
+    }
+}
+.cuadro{
+    transition: width 3s steps(5, end);
+    h4{
+        transition: width 3s steps(5, end);
+    &:hover{
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        color: rgb(44, 43, 41);
+        background-color: rgba(145, 23, 216, 0.63);
+        width: 100%;    
+    }    
+    }
+}
+.hero{
+    .parrafo{
+        h2{
+        &:hover{
+            font-family: cursive;
+            font-size: 30px;
+            text-align: center;
+            color: rgba(216, 78, 23, 0.774);
+        }    
+        }
+    }
+}
+.hero{
+    .parrafo{
+        h2{
+            span{
+            &:hover{
+                color: rgba(216, 84, 23, 0.774);    
+            }    
+            }
+        }
+    }
+}
+/*NOSOTROS*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+    }
+}
+.nosotros{
+    background-image: url(../img/nosotros.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;  
+    display: flex;
+    flex-direction: column;
+    h2{
+        color: aliceblue;
+        font-family: cursive;
+        font-size: 20px;
+        padding: 5px;
+    }
+    p{
+        color: aliceblue;
+        font-family: cursive;
+        font-size: 20px;
+        text-align: left;
+        width: 50%;
+        padding-left: 5px;
+        margin-top: 30px;
+    }
+}
+.pienosotros{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(23, 203, 216);
+    div{
+        a{
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+.navbarservicios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+    }
+}
+.servicios{
+    background-color: blanchedalmond;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        color: black;
+        font-family: cursive;
+        font-size: 20px;
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 10px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+}
+.medios{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);/*Corregir seccion para que no se salga del contenedor padre*/
+    grid-auto-rows: 150px;
+    gap: 5px;  
+    padding: 5px;
+    background-color: rgb(23, 203, 216);
+    div{
+        iframe{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.video{
+    position: relative;
+    h4{
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        color: blanchedalmond;
+        background-color: rgba(17, 200, 224, 0.507);
+        width: 100%;    
+    }
+}
+.recuadro-1{
+    grid-column: span 2;
+}
+.recuadro-2{
+    grid-row: span 2;
+}
+.recuadro-3{
+    grid-row: span 2;
+}
+.recuadro-4{
+    grid-column: span 2;
+}
+.pieservicios{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(23, 203, 216);
+    div{
+        a{
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+/*OFERTAS*/
+.parrafo-ofertas{
+    background-color: blanchedalmond;
+    height: 15vh;
+    text-align: center;
+    p{
+        font-family: cursive;
+        font-size: 20px;
+        color: blanchedalmond;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgba(145, 23, 216, 0.877) ;
+    }
+}
+.ofertas{
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 300px;
+    h2{
+        text-align: center;
+        background-color:rgb(23, 203, 216);
+        font-family: cursive;
+        font-size: 20px;
+    }
+    .tarjetas{
+        text-align: center;
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+        div{
+            img{
+                width: 250px;
+                height: 200px;
+                border: 2px solid rgb(23, 203, 216);
+                border-radius: 15px;
+                margin-top: 20px;   
+            }
+        }
+        div{
+            a{
+                color: blanchedalmond;
+                text-decoration: none; 
+            }
+        }
+        h4{
+            background-color: rgba(23, 203, 216, 0.63);
+            border-radius: 10px;
+            font-family: cursive;
+            font-size: 20px;
+            margin-top: 5px;  
+        }
+    }
+}
+/*CONTACTENOS*/
+.navbarcontacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+    }
+}
+/*BOOSTRAP CONTACTENOS*/
+.titulo-formulario{
+    text-align: center;
+    background-color: rgba(145, 23, 216, 0.774);
+    font-family: cursive;
+    font-size: 20px;
+    h2{
+        color: blanchedalmond;
+        height: 7vh;
+    }
+}
+.formulario{
+    width: 50%;
+    justify-content: space-between;
+    border: 2px solid rgba(145, 23, 216, 0.774);
+    padding: 10px;
+    align-items: center;
+    margin-left: 350px;
+    margin-bottom: 10px;  
+    background-color: blanchedalmond;
+}

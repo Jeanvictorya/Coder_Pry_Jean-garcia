@@ -12,20 +12,57 @@
 </head>
 
 <body>
-        <img src="../img/logo_2.png" alt="Logo_cottonTails">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contactenos.html">Contactenos</a></li>
-            </ul>
-        </nav>-->
+    <header class="navbarcontacto">
+    <img src="../img/logo_2.png" alt="Logo_cottonTails">
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./servicios.html">Servicios</a></li>
+            <li><a href="./ofertas.html">Ofertas</a></li>
+            <li><a href="./contactenos.html">Contactenos</a></li>
+        </ul>
+    </nav>
     </header>
     <main>
-    
+        <section class="titulo-formulario">
+            <h2>Formulario de contacto</h2>
+        </section>
+        <section>
+        <form class="formulario">
+            
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">No compartiremos su E-mail con nadie mas.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Apellido</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+            </div>
+            
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Comprobar</label>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Envienos su solicitud</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        </section>
     </main>
     <footer class="pienosotros">
-        <div><h2>CottonTails</h2></div>
+        <div>
+            <h2>CottonTails</h2>
+        </div>
         <div>
             <a href="https://es-la.facebook.com/" target="_blank"><img src="../img/facebook.png"
                     alt="Logo Facebook"></a>
