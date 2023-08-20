@@ -1,13 +1,13 @@
 @media screen and (max-width: 1200px){
     .hero {
         width: 100%;
-        height: 20vh;
+        height: 30vh;
     }
 }
 @media screen and (max-width: 984px) {
     .hero {
         width: 100%;
-        height: 30vh;
+        height: 35vh;
     }
 }
 @media screen and (max-width: 813px){
@@ -20,7 +20,7 @@
         text-align: center;
         justify-content: space-around; 
         align-items: center;
-        flex-direction: column;    
+        flex-direction: column;
     }
 }
 
@@ -39,7 +39,7 @@
 @media screen and (max-width: 588px) {
     .hero{
         width: 100%;
-        height: 50vh;
+        height: 55vh;
     }
 }
 @media screen and (max-width: 572px) {
@@ -79,21 +79,22 @@
 @media screen and (max-width: 476px) {
     .hero{
         width: 100%;
-        height: 60vh;
+        height: 65vh;
     }
 }
 @media screen and (max-width: 450px) {
     .hero {
         width: 100%;
-        height: 70vh;
+        height: 55vh;
     }
 }
 @media screen and (max-width: 424px) {
     .hero {
         width: 100%;
-        height: 75vh;
+        height: 65vh;
     }
 }
+
 @media screen and (max-width: 423px) {
     .grid_container{
         display: grid;
@@ -110,7 +111,7 @@
 @media screen and (max-width: 411px) {
     .hero {
         width: 100%;
-        height: 80vh;
+        height: 60vh;
     }
 }
 @media screen and (max-width: 378px) {
@@ -123,7 +124,7 @@
 @media screen and (max-width: 371px) {
     .hero {
         width: 100%;
-        height: 85vh;
+        height: 65vh;
     }
 }
 @media screen and (max-width: 331px){
@@ -141,17 +142,70 @@
 @media screen and (max-width: 319px) {
     .hero {
         width: 100%;
-        height: 90vh;
+        height: 70vh;
     }
 }
 @media screen and (max-width: 312px) {
     .hero {
         width: 100%;
-        height: 95vh;
+        height: 75vh;
     }
 }
 /*MEDIA QUERYS NOSOTROS*/
-/*MEDIA QUERYS SERVICIOS*/
+@media screen and (max-width: 1100px) {
+    .nosotros{
+        height: 500px;
+    } 
+}
+@media screen and (max-width: 995px) {
+    .nosotros{
+        height: 600px;
+    } 
+}
+@media screen and (max-width: 724px) {
+    .nosotros{
+        height: 700px;
+    } 
+}
+@media screen and (max-width: 584px) {
+    .nosotros{
+        height: 800px;
+}}
+@media screen and (max-width: 584px) {
+    .nosotros
+        .p_nosotros{
+            font-size: 18px;
+        }
+}
+@media screen and (max-width: 442px) {
+    .nosotros
+        .p_nosotros{
+            font-size: 15px;
+        }
+}
+@media screen and (max-width: 442px) {
+    .navbar
+            {
+            height: 300px;
+    }
+}
+@media screen and (max-width: 318px) {
+    .nosotros{
+        height: 850px;
+    }
+        .p_nosotros{
+            font-size: 15px;
+        }
+}
+@media screen and (max-width: 296px) {
+    .nosotros{
+        height: 900px;
+    }
+        .p_nosotros{
+            font-size: 15px;
+        }
+}
+/* MEDIA QUERYS SERVICIOS*/
 @media screen and (max-width: 892px) {
     .servicios{
         height: 200px;
@@ -178,12 +232,17 @@
         height: 55vh;
     }
 }
+@media screen and (max-width: 402px) {
+    .navbarservicios{
+        height: 60vh;
+    }
+}
 @media screen and (max-width: 400px) {
     .navbarservicios {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 35vh;
+        height: 65vh;
         position: sticky;
         top: 0;
         z-index: 1;   
@@ -205,24 +264,120 @@
     background-color: rgb(23, 203, 216); 
     }
 }
-/*MEDIA QUERYS OFERTAS*/
-
+/* MEDIA QUERYS OFERTAS */
 @media screen and (max-width: 764px){
     .ofertas{
-        height: 500px;
+        height: 2100px;
     }
 }
 @media screen and (max-width: 764px){ 
-    .ofertas .tarjetas {
+    .ofertas .div1 {
         text-align: center;
         justify-content: space-around; 
         align-items: center;
         flex-direction: column;
-        display: flex;    
+        height: 700px;
+    }
+}
+@media screen and (max-width: 764px){ 
+    .ofertas .div2 {
+        text-align: center;
+        justify-content: space-around; 
+        align-items: center;
+        flex-direction: column; 
+        height: 700px;
+    }
+}
+@media screen and (max-width: 764px){ 
+    .ofertas .div3 {
+        text-align: center;
+        justify-content: space-around; 
+        align-items: center;
+        flex-direction: column;
+        height: 700px;
     }
 }
 @media screen and (max-width: 752px) {
     .parrafo-ofertas{
     height: 150px;
 }
+}
+
+/* MEDIA QUERYS CONTACTO*/
+@media screen and (max-width: 973px) {
+    .formulario{
+        width: 50%;
+        border: 2px solid rgba(145, 23, 216, 0.774);
+        padding: 10px;
+        margin-bottom: 10px;  
+        background-color: blanchedalmond;
+        margin-left: 300px;
+    }
+}
+@media screen and (max-width: 789px) {
+    .formulario{
+        width: 50%;
+        border: 2px solid rgba(145, 23, 216, 0.774);
+        padding: 10px;
+        margin-bottom: 10px;  
+        background-color: blanchedalmond;
+        margin-left: 250px;
+    }
+}
+@media screen and (max-width: 643px) {
+    .formulario{
+        width: 50%;
+        border: 2px solid rgba(145, 23, 216, 0.774);
+        padding: 10px;
+        margin-bottom: 10px;  
+        background-color: blanchedalmond;
+        margin-left: 200px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .formulario{
+        width: 50%;
+        border: 2px solid rgba(145, 23, 216, 0.774);
+        padding: 10px;
+        margin-bottom: 10px;  
+        background-color: blanchedalmond;
+        margin-left: 150px;
+    }
+}
+@media screen and (max-width: 495px) {
+    .navbarcontacto{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 55vh;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 420px) {
+    .formulario{
+        width: 50%;
+        border: 2px solid rgba(145, 23, 216, 0.774);
+        padding: 10px;
+        margin-bottom: 10px;  
+        background-color: blanchedalmond;
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 281px) {
+.formulario{
+    width: 50%;
+    border: 2px solid rgba(145, 23, 216, 0.774);
+    padding: 10px;
+    margin-bottom: 10px;  
+    background-color: blanchedalmond;
+    margin-left: 70px;
+}}
+@media screen and (max-width: 255px) {
+    .titulo-formulario{
+        color: blanchedalmond;
+        height: 15vh;
+        margin-bottom: 10px;
+    }
 }

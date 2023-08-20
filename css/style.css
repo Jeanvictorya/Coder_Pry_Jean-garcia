@@ -15,7 +15,7 @@ header {
     height: 25vh;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
 }
 header img {
     width: 100px;
@@ -117,15 +117,15 @@ header nav ul li a {
     align-items: center;
     background-color: rgb(23, 203, 216);
 }
-.piedepagina .mapa div iframe {
-    width: 300px;
-    height: 160px; 
-    padding: 10px;
-}
+
 .titulo_pie{
     font-family: cursive;
     color: black;
     margin-right:30px;
+}
+.transformacion{
+    width: 30px;
+    height: 30px;
 }
 .piedepagina .redes img {
     width: 30px;
@@ -361,6 +361,13 @@ header nav ul li a {
 .hero .parrafo h2 span:hover {
     color: rgba(145, 23, 216, 0.774);
 }
+/*TRANSFORMACIONES*/
+.piedepagina .transformacion{
+    transition: 4s;
+}
+.piedepagina .transformacion:hover{
+    transform: translateX(20px);
+}
 /*----------------------------------------------*/
 /*NOSOTROS*/
 
@@ -416,6 +423,59 @@ header nav ul li a {
     height: 30px;
 }
 /*MEDIA QUERYS NOSOTROS*/
+@media screen and (max-width: 1100px) {
+    .nosotros{
+        height: 500px;
+    } 
+}
+@media screen and (max-width: 995px) {
+    .nosotros{
+        height: 600px;
+    } 
+}
+@media screen and (max-width: 724px) {
+    .nosotros{
+        height: 700px;
+    } 
+}
+@media screen and (max-width: 584px) {
+    .nosotros{
+        height: 800px;
+}}
+@media screen and (max-width: 584px) {
+    .nosotros
+        .p_nosotros{
+            font-size: 18px;
+        }
+}
+@media screen and (max-width: 442px) {
+    .nosotros
+        .p_nosotros{
+            font-size: 15px;
+        }
+}
+@media screen and (max-width: 442px) {
+    .navbar
+            {
+            height: 300px;
+    }
+}
+@media screen and (max-width: 318px) {
+    .nosotros{
+        height: 850px;
+    }
+        .p_nosotros{
+            font-size: 15px;
+        }
+}
+@media screen and (max-width: 296px) {
+    .nosotros{
+        height: 900px;
+    }
+        .p_nosotros{
+            font-size: 15px;
+        }
+}
 /*SERVICIOS*/
 .navbarservicios{
     display: flex;
@@ -499,6 +559,11 @@ header nav ul li a {
     width: 30px;
     height: 30px;
 }
+.pieservicios h2{
+    font-size: 30px;
+    color: blanchedalmond;
+    font-family: cursive;
+}
 /*MEDIA QUERYS SERVICIOS*/
 @media screen and (max-width: 892px) {
     .servicios{
@@ -526,12 +591,17 @@ header nav ul li a {
         height: 55vh;
     }
 }
+@media screen and (max-width: 402px) {
+    .navbarservicios{
+        height: 60vh;
+    }
+}
 @media screen and (max-width: 400px) {
     .navbarservicios {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 35vh;
+        height: 65vh;
         position: sticky;
         top: 0;
         z-index: 1;   
@@ -554,9 +624,91 @@ header nav ul li a {
     }
 }
 /*OFERTAS*/
+.ofertas .div1{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+.ofertas .div2{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+.ofertas .div3{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+.ofertas .div1 img {
+    border: 2px, solid rgb(23, 203, 216);
+    width: 200px;
+    height: 150px;
+    border: 2px solid rgb(23, 203, 216);
+    border-radius: 15px;
+}
+.ofertas .div1 a {
+    text-decoration: none;
+}
+.ofertas .div1 h4{
+    font-family: cursive;
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+    background-color:rgb(23, 203, 216);
+    border-radius: 10px;
+}
+.ofertas .div2 img {
+    border: 2px, solid rgb(23, 203, 216);
+    width: 200px;
+    height: 150px;
+    border: 2px solid rgb(23, 203, 216);
+    border-radius: 15px;
+}
+.ofertas .div2 a {
+    text-decoration: none;
+}
+.ofertas .div2 h4{
+    font-family: cursive;
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+    background-color:rgb(23, 203, 216);
+    border-radius: 10px;
+}
+.ofertas .div3 img {
+    border: 2px, solid rgb(23, 203, 216);
+    width: 200px;
+    height: 150px;
+    border: 2px solid rgb(23, 203, 216);
+    border-radius: 15px;
+}
+.ofertas .div3 a {
+    text-decoration: none;
+}
+.ofertas .div3 h4{
+    font-family: cursive;
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+    background-color:rgb(23, 203, 216);
+    border-radius: 10px;
+}
+
 .parrafo-ofertas{
     background-color: blanchedalmond;
-    height: 15vh;
+    height: 10vh;
     text-align: center;
 }
 .parrafo-ofertas p{
@@ -567,44 +719,69 @@ header nav ul li a {
     padding-bottom: 10px;
     background-color: rgba(145, 23, 216, 0.774) ;
 }
-.ofertas  {
-    background-color: blanchedalmond;
-    width: 100%;
-    height: 300px;
-}
+
 .ofertas h2 {
     text-align: center;
     background-color:rgb(23, 203, 216);
     font-family: cursive;
     font-size: 20px;
 }
-.ofertas .tarjetas {
-    text-align: center;
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-}
 
-.ofertas .tarjetas div img{
-    width: 250px;
-    height: 200px;
-    border: 2px solid rgb(23, 203, 216);
-    border-radius: 15px;
-    margin-top: 20px;   
+/*MEDIA QUERYS OFERTAS*/
+
+@media screen and (max-width: 764px){
+    .ofertas{
+        height: 2100px;
+    }
 }
-.ofertas .tarjetas div a {
-    color: blanchedalmond;
-    text-decoration: none;
+@media screen and (max-width: 764px){ 
+    .ofertas .div1 {
+        text-align: center;
+        justify-content: space-around; 
+        align-items: center;
+        flex-direction: column;
+        height: 700px;
+    }
 }
-.ofertas .tarjetas h4 {
-    background-color: rgba(23, 203, 216, 0.63);
+@media screen and (max-width: 764px){ 
+    .ofertas .div2 {
+        text-align: center;
+        justify-content: space-around; 
+        align-items: center;
+        flex-direction: column; 
+        height: 700px;
+    }
+}
+@media screen and (max-width: 764px){ 
+    .ofertas .div3 {
+        text-align: center;
+        justify-content: space-around; 
+        align-items: center;
+        flex-direction: column;
+        height: 700px;
+    }
+}
+@media screen and (max-width: 752px) {
+    .parrafo-ofertas{
+    height: 150px;
+}
+}
+/*PSEUDOCLASES OFERTAS*/
+.ofertas .div1 h4:hover {
+    background-color: rgba(145, 23, 216, 0.774);
     border-radius: 10px;
     font-family: cursive;
     font-size: 20px;
     margin-top: 5px;
 }
-/*PSEUDOCLASES OFERTAS*/
-.ofertas .tarjetas h4:hover {
+.ofertas .div2 h4:hover {
+    background-color: rgba(145, 23, 216, 0.774);
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.ofertas .div3 h4:hover {
     background-color: rgba(145, 23, 216, 0.774);
     border-radius: 10px;
     font-family: cursive;
@@ -639,11 +816,100 @@ header nav ul li a {
 }
 .formulario{
     width: 50%;
-    justify-content: space-between;
     border: 2px solid rgba(145, 23, 216, 0.774);
     padding: 10px;
-    align-items: center;
-    margin-left: 350px;
     margin-bottom: 10px;  
     background-color: blanchedalmond;
+    margin-left: 350px;
+}
+.ubicacion{
+    height: 30%;
+    
+}
+.ubicacion iframe{
+    width: 100%;
+    height: 30vh;
+}
+.pienosotros h2 {
+    font-family: cursive;
+    color: blanchedalmond;
+    font-size: 30px;
+}
+/*MEDIA QUERYS CONTACTO*/
+@media screen and (max-width: 973px) {
+    .formulario{
+        width: 50%;
+        border: 2px solid rgba(145, 23, 216, 0.774);
+        padding: 10px;
+        margin-bottom: 10px;  
+        background-color: blanchedalmond;
+        margin-left: 300px;
+    }
+}
+@media screen and (max-width: 789px) {
+    .formulario{
+        width: 50%;
+        border: 2px solid rgba(145, 23, 216, 0.774);
+        padding: 10px;
+        margin-bottom: 10px;  
+        background-color: blanchedalmond;
+        margin-left: 250px;
+    }
+}
+@media screen and (max-width: 643px) {
+    .formulario{
+        width: 50%;
+        border: 2px solid rgba(145, 23, 216, 0.774);
+        padding: 10px;
+        margin-bottom: 10px;  
+        background-color: blanchedalmond;
+        margin-left: 200px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .formulario{
+        width: 50%;
+        border: 2px solid rgba(145, 23, 216, 0.774);
+        padding: 10px;
+        margin-bottom: 10px;  
+        background-color: blanchedalmond;
+        margin-left: 150px;
+    }
+}
+@media screen and (max-width: 495px) {
+    .navbarcontacto{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 55vh;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 420px) {
+    .formulario{
+        width: 50%;
+        border: 2px solid rgba(145, 23, 216, 0.774);
+        padding: 10px;
+        margin-bottom: 10px;  
+        background-color: blanchedalmond;
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 281px) {
+.formulario{
+    width: 50%;
+    border: 2px solid rgba(145, 23, 216, 0.774);
+    padding: 10px;
+    margin-bottom: 10px;  
+    background-color: blanchedalmond;
+    margin-left: 70px;
+}}
+@media screen and (max-width: 255px) {
+    .titulo-formulario{
+        color: blanchedalmond;
+        height: 15vh;
+        margin-bottom: 10px;
+    }
 }

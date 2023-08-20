@@ -1,5 +1,5 @@
 header{
-    background-color: rgb(23, 203, 216);
+    background-color: $color-primario;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,7 +7,7 @@ header{
     height: 25vh;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     img{
         width: 100px;
         height: 100px;
@@ -22,7 +22,7 @@ header{
             li{
                 a{
                     margin: 10px;
-                    color: blanchedalmond;
+                    color: $color-terciario;
                     font-family: cursive;
                     text-decoration: none;
                 }

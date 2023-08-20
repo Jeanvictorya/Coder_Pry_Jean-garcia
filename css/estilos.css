@@ -19,7 +19,7 @@ header {
   height: 25vh;
   position: sticky;
   top: 0;
-  z-index: 1; }
+  z-index: 10; }
   header img {
     width: 100px;
     height: 100px;
@@ -38,7 +38,7 @@ header {
 .hero {
   width: 100%;
   height: 25vh;
-  background-color: rgba(23, 203, 216, 0.568);
+  background-color: #17cbd8;
   padding: 5px; }
   .hero .parrafo {
     display: flex;
@@ -62,7 +62,7 @@ header {
       margin-left: 50px; }
 
 .productos {
-  background-color: blanchedalmond;
+  background-color: color-terciario;
   width: 100%;
   height: 300px; }
   .productos h2 {
@@ -85,7 +85,7 @@ header {
       color: blanchedalmond;
       text-decoration: none; }
     .productos .tarjetitas h4 {
-      background-color: rgba(23, 203, 216, 0.63);
+      background-color: #17cbd8;
       border-radius: 10px;
       font-family: cursive;
       font-size: 20px;
@@ -148,7 +148,7 @@ header {
     bottom: 0;
     text-align: center;
     color: blanchedalmond;
-    background-color: rgba(17, 200, 224, 0.507);
+    background-color: #17cbd8;
     width: 100%; }
 
 .img-1 {
@@ -169,7 +169,7 @@ header {
   .productos .tarjetitas {
     transition: width 3s steps(5, end); }
     .productos .tarjetitas h4:hover {
-      background-color: rgba(145, 23, 216, 0.63);
+      background-color: #9117d8;
       border-radius: 10px;
       font-family: cursive;
       font-size: 20px;
@@ -184,7 +184,7 @@ header {
       bottom: 0;
       text-align: center;
       color: #2c2b29;
-      background-color: rgba(145, 23, 216, 0.63);
+      background-color: #9117d8;
       width: 100%; }
 
 .hero .parrafo h2:hover {
@@ -194,7 +194,15 @@ header {
   color: rgba(216, 78, 23, 0.774); }
 
 .hero .parrafo h2 span:hover {
-  color: rgba(216, 84, 23, 0.774); }
+  color: rgba(216, 78, 23, 0.774); }
+
+/*TRANSFORMACIONES*/
+.transformacion img {
+  width: 100px;
+  height: 100px; }
+  .transformacion img:hover {
+    transition: 4s;
+    transform: translateX(50px); }
 
 /*NOSOTROS*/
 .navbar {
@@ -219,12 +227,12 @@ header {
   display: flex;
   flex-direction: column; }
   .nosotros h2 {
-    color: aliceblue;
+    color: blanchedalmond;
     font-family: cursive;
     font-size: 20px;
     padding: 5px; }
   .nosotros p {
-    color: aliceblue;
+    color: blanchedalmond;
     font-family: cursive;
     font-size: 20px;
     text-align: left;
@@ -264,7 +272,7 @@ header {
   flex-direction: column;
   align-items: center; }
   .servicios p {
-    color: black;
+    color: #2c2b29;
     font-family: cursive;
     font-size: 20px;
     width: 50%;
@@ -294,7 +302,7 @@ header {
     bottom: 0;
     text-align: center;
     color: blanchedalmond;
-    background-color: rgba(17, 200, 224, 0.507);
+    background-color: #17cbd8;
     width: 100%; }
 
 .recuadro-1 {
@@ -320,11 +328,93 @@ header {
   .pieservicios div a img {
     width: 30px;
     height: 30px; }
+  .pieservicios h2 {
+    font-size: 30px;
+    color: blanchedalmond;
+    font-family: cursive; }
 
 /*OFERTAS*/
+.ofertas h2 {
+  text-align: center;
+  background-color: #17cbd8;
+  font-family: cursive;
+  font-size: 20px; }
+
+.ofertas .div1 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 250px;
+  align-items: center;
+  padding: 10px;
+  background-color: blanchedalmond; }
+  .ofertas .div1 img {
+    border: 2px, solid #17cbd8;
+    width: 200px;
+    height: 150px;
+    border: 2px solid #17cbd8;
+    border-radius: 15px; }
+  .ofertas .div1 a {
+    text-decoration: none; }
+  .ofertas .div1 h4 {
+    font-family: cursive;
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: #17cbd8;
+    border-radius: 10px; }
+
+.ofertas .div2 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 250px;
+  align-items: center;
+  padding: 10px;
+  background-color: blanchedalmond; }
+  .ofertas .div2 img {
+    border: 2px, solid #17cbd8;
+    width: 200px;
+    height: 150px;
+    border: 2px solid #17cbd8;
+    border-radius: 15px; }
+  .ofertas .div2 a {
+    text-decoration: none; }
+  .ofertas .div2 h4 {
+    font-family: cursive;
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: #17cbd8;
+    border-radius: 10px; }
+
+.ofertas .div3 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 250px;
+  align-items: center;
+  padding: 10px;
+  background-color: blanchedalmond; }
+  .ofertas .div3 img {
+    border: 2px, solid #17cbd8;
+    width: 200px;
+    height: 150px;
+    border: 2px solid #17cbd8;
+    border-radius: 15px; }
+  .ofertas .div3 a {
+    text-decoration: none; }
+  .ofertas .div3 h4 {
+    font-family: cursive;
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: #17cbd8;
+    border-radius: 10px; }
+
 .parrafo-ofertas {
   background-color: blanchedalmond;
-  height: 15vh;
+  height: 10vh;
   text-align: center; }
   .parrafo-ofertas p {
     font-family: cursive;
@@ -332,37 +422,7 @@ header {
     color: blanchedalmond;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgba(145, 23, 216, 0.877); }
-
-.ofertas {
-  background-color: blanchedalmond;
-  width: 100%;
-  height: 300px; }
-  .ofertas h2 {
-    text-align: center;
-    background-color: #17cbd8;
-    font-family: cursive;
-    font-size: 20px; }
-  .ofertas .tarjetas {
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    .ofertas .tarjetas div img {
-      width: 250px;
-      height: 200px;
-      border: 2px solid #17cbd8;
-      border-radius: 15px;
-      margin-top: 20px; }
-    .ofertas .tarjetas div a {
-      color: blanchedalmond;
-      text-decoration: none; }
-    .ofertas .tarjetas h4 {
-      background-color: rgba(23, 203, 216, 0.63);
-      border-radius: 10px;
-      font-family: cursive;
-      font-size: 20px;
-      margin-top: 5px; }
+    background-color: #9117d8; }
 
 /*CONTACTENOS*/
 .navbarcontacto {
@@ -381,7 +441,7 @@ header {
 /*BOOSTRAP CONTACTENOS*/
 .titulo-formulario {
   text-align: center;
-  background-color: rgba(145, 23, 216, 0.774);
+  background-color: #9117d8;
   font-family: cursive;
   font-size: 20px; }
   .titulo-formulario h2 {
@@ -391,12 +451,22 @@ header {
 .formulario {
   width: 50%;
   justify-content: space-between;
-  border: 2px solid rgba(145, 23, 216, 0.774);
+  border: 2px solid #9117d8;
   padding: 10px;
-  align-items: center;
   margin-left: 350px;
   margin-bottom: 10px;
   background-color: blanchedalmond; }
+
+.ubicacion {
+  height: 30%; }
+  .ubicacion iframe {
+    width: 100%;
+    height: 30vh; }
+
+.pienosotros h2 {
+  font-family: cursive;
+  color: blanchedalmond;
+  font-size: 30px; }
 
 footer .piedepagina .mapa {
   width: 100%;
@@ -421,12 +491,12 @@ footer .piedepagina .mapa {
 @media screen and (max-width: 1200px) {
   .hero {
     width: 100%;
-    height: 20vh; } }
+    height: 30vh; } }
 
 @media screen and (max-width: 984px) {
   .hero {
     width: 100%;
-    height: 30vh; } }
+    height: 35vh; } }
 
 @media screen and (max-width: 813px) {
   .productos {
@@ -452,7 +522,7 @@ footer .piedepagina .mapa {
 @media screen and (max-width: 588px) {
   .hero {
     width: 100%;
-    height: 50vh; } }
+    height: 55vh; } }
 
 @media screen and (max-width: 572px) {
   header nav ul {
@@ -487,17 +557,17 @@ footer .piedepagina .mapa {
 @media screen and (max-width: 476px) {
   .hero {
     width: 100%;
-    height: 60vh; } }
+    height: 65vh; } }
 
 @media screen and (max-width: 450px) {
   .hero {
     width: 100%;
-    height: 70vh; } }
+    height: 55vh; } }
 
 @media screen and (max-width: 424px) {
   .hero {
     width: 100%;
-    height: 75vh; } }
+    height: 65vh; } }
 
 @media screen and (max-width: 423px) {
   .grid_container {
@@ -514,7 +584,7 @@ footer .piedepagina .mapa {
 @media screen and (max-width: 411px) {
   .hero {
     width: 100%;
-    height: 80vh; } }
+    height: 60vh; } }
 
 @media screen and (max-width: 378px) {
   header nav ul {
@@ -525,7 +595,7 @@ footer .piedepagina .mapa {
 @media screen and (max-width: 371px) {
   .hero {
     width: 100%;
-    height: 85vh; } }
+    height: 65vh; } }
 
 @media screen and (max-width: 331px) {
   .grid_container {
@@ -541,15 +611,57 @@ footer .piedepagina .mapa {
 @media screen and (max-width: 319px) {
   .hero {
     width: 100%;
-    height: 90vh; } }
+    height: 70vh; } }
 
 @media screen and (max-width: 312px) {
   .hero {
     width: 100%;
-    height: 95vh; } }
+    height: 75vh; } }
 
 /*MEDIA QUERYS NOSOTROS*/
-/*MEDIA QUERYS SERVICIOS*/
+@media screen and (max-width: 1100px) {
+  .nosotros {
+    height: 500px; } }
+
+@media screen and (max-width: 995px) {
+  .nosotros {
+    height: 600px; } }
+
+@media screen and (max-width: 724px) {
+  .nosotros {
+    height: 700px; } }
+
+@media screen and (max-width: 584px) {
+  .nosotros {
+    height: 800px; } }
+
+@media screen and (max-width: 584px) {
+  .nosotros
+.p_nosotros {
+    font-size: 18px; } }
+
+@media screen and (max-width: 442px) {
+  .nosotros
+.p_nosotros {
+    font-size: 15px; } }
+
+@media screen and (max-width: 442px) {
+  .navbar {
+    height: 300px; } }
+
+@media screen and (max-width: 318px) {
+  .nosotros {
+    height: 850px; }
+  .p_nosotros {
+    font-size: 15px; } }
+
+@media screen and (max-width: 296px) {
+  .nosotros {
+    height: 900px; }
+  .p_nosotros {
+    font-size: 15px; } }
+
+/* MEDIA QUERYS SERVICIOS*/
 @media screen and (max-width: 892px) {
   .servicios {
     height: 200px; } }
@@ -572,12 +684,16 @@ footer .piedepagina .mapa {
   .navbarservicios {
     height: 55vh; } }
 
+@media screen and (max-width: 402px) {
+  .navbarservicios {
+    height: 60vh; } }
+
 @media screen and (max-width: 400px) {
   .navbarservicios {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 35vh;
+    height: 65vh;
     position: sticky;
     top: 0;
     z-index: 1; } }
@@ -596,19 +712,106 @@ footer .piedepagina .mapa {
     align-items: center;
     background-color: #17cbd8; } }
 
-/*MEDIA QUERYS OFERTAS*/
+/* MEDIA QUERYS OFERTAS */
 @media screen and (max-width: 764px) {
   .ofertas {
-    height: 500px; } }
+    height: 2100px; } }
 
 @media screen and (max-width: 764px) {
-  .ofertas .tarjetas {
+  .ofertas .div1 {
     text-align: center;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    display: flex; } }
+    height: 700px; } }
+
+@media screen and (max-width: 764px) {
+  .ofertas .div2 {
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 700px; } }
+
+@media screen and (max-width: 764px) {
+  .ofertas .div3 {
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 700px; } }
 
 @media screen and (max-width: 752px) {
   .parrafo-ofertas {
     height: 150px; } }
+
+/* MEDIA QUERYS CONTACTO*/
+@media screen and (max-width: 973px) {
+  .formulario {
+    width: 50%;
+    border: 2px solid rgba(145, 23, 216, 0.774);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: blanchedalmond;
+    margin-left: 300px; } }
+
+@media screen and (max-width: 789px) {
+  .formulario {
+    width: 50%;
+    border: 2px solid rgba(145, 23, 216, 0.774);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: blanchedalmond;
+    margin-left: 250px; } }
+
+@media screen and (max-width: 643px) {
+  .formulario {
+    width: 50%;
+    border: 2px solid rgba(145, 23, 216, 0.774);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: blanchedalmond;
+    margin-left: 200px; } }
+
+@media screen and (max-width: 520px) {
+  .formulario {
+    width: 50%;
+    border: 2px solid rgba(145, 23, 216, 0.774);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: blanchedalmond;
+    margin-left: 150px; } }
+
+@media screen and (max-width: 495px) {
+  .navbarcontacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55vh;
+    position: sticky;
+    top: 0;
+    z-index: 1; } }
+
+@media screen and (max-width: 420px) {
+  .formulario {
+    width: 50%;
+    border: 2px solid rgba(145, 23, 216, 0.774);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: blanchedalmond;
+    margin-left: 100px; } }
+
+@media screen and (max-width: 281px) {
+  .formulario {
+    width: 50%;
+    border: 2px solid rgba(145, 23, 216, 0.774);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: blanchedalmond;
+    margin-left: 70px; } }
+
+@media screen and (max-width: 255px) {
+  .titulo-formulario {
+    color: blanchedalmond;
+    height: 15vh;
+    margin-bottom: 10px; } }

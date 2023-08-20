@@ -1,7 +1,7 @@
 .hero{
     width: 100%;
     height: 25vh;
-    background-color: rgba(23, 203, 216, 0.568);
+    background-color: $color-primario;
     padding: 5px;
     .parrafo{
         display: flex;
@@ -13,7 +13,7 @@
             font-size: 30px;
             text-align: center;
             span{
-                color:  rgb(145, 23, 216);
+                color:  $color-secundario;
             }
         }
         p{
@@ -29,12 +29,12 @@
         }
     }
 .productos{
-    background-color: blanchedalmond;
+    background-color: color-terciario;
     width: 100%;
     height: 300px;
     h2{
         text-align: center;
-        background-color:rgb(23, 203, 216);
+        background-color: $color-primario;
         font-family: cursive;
         font-size: 20px;
     }
@@ -47,17 +47,17 @@
             img{
                 width: 250px;
                 height: 200px;
-                border: 2px solid rgb(23, 203, 216);
+                border: 2px solid $color-primario;
                 border-radius: 15px;
                 margin-top: 20px;   
             }
             a{
-                color: blanchedalmond;
+                color: $color-terciario;
                 text-decoration: none;
             }
         }
         h4{
-            background-color: rgba(23, 203, 216, 0.63);
+            background-color: $color-primario;
             border-radius: 10px;
             font-family: cursive;
             font-size: 20px;
@@ -82,7 +82,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
         align-items: center;
-        background-color: rgb(23, 203, 216);
+        background-color: $color-primario;
         div{
             iframe{
                 width: 300px;
@@ -100,14 +100,14 @@
 
 .titulo_pie{
     font-family: cursive;
-    color: blanchedalmond;
+    color: $color-terciario;
     margin-right:30px;
     }
 }
 /*BOOSTRAP*/
 .carousel-inner{
     height: 60vh; 
-    background-color: rgb(23, 203, 216);
+    background-color: $color-primario;
     div{
         img{
             height: 55vh;
@@ -122,7 +122,7 @@
     grid-auto-rows: 150px;
     gap: 5px;  
     padding: 5px;
-    background-color: rgb(23, 203, 216);
+    background-color: $color-primario;
     div{
         img{
             width: 100%;
@@ -137,8 +137,8 @@
         position: absolute;
         bottom: 0;
         text-align: center;
-        color: blanchedalmond;
-        background-color: rgba(17, 200, 224, 0.507);
+        color: $color-terciario;
+        background-color: $color-primario;
         width: 100%;
     }
 }
@@ -162,7 +162,7 @@
         transition: width 3s steps(5, end);
         h4{
         &:hover{
-            background-color: rgba(145, 23, 216, 0.63);
+            background-color: $color-secundario;
             border-radius: 10px;
             font-family: cursive;
             font-size: 20px;
@@ -179,8 +179,8 @@
         position: absolute;
         bottom: 0;
         text-align: center;
-        color: rgb(44, 43, 41);
-        background-color: rgba(145, 23, 216, 0.63);
+        color: $color-cuarto;
+        background-color: $color-secundario;
         width: 100%;    
     }    
     }
@@ -192,7 +192,7 @@
             font-family: cursive;
             font-size: 30px;
             text-align: center;
-            color: rgba(216, 78, 23, 0.774);
+            color: $color-quinto;
         }    
         }
     }
@@ -202,10 +202,19 @@
         h2{
             span{
             &:hover{
-                color: rgba(216, 84, 23, 0.774);    
+                color: $color-quinto;    
             }    
             }
         }
+    }
+}
+/*TRANSFORMACIONES*/
+.transformacion img{
+    width: 100px;
+    height: 100px;
+    &:hover{
+        transition: 4s;
+        transform: translateX(50px);
     }
 }
 /*NOSOTROS*/
@@ -232,13 +241,13 @@
     display: flex;
     flex-direction: column;
     h2{
-        color: aliceblue;
+        color: $color-terciario;
         font-family: cursive;
         font-size: 20px;
         padding: 5px;
     }
     p{
-        color: aliceblue;
+        color: $color-terciario;
         font-family: cursive;
         font-size: 20px;
         text-align: left;
@@ -254,7 +263,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    background-color: rgb(23, 203, 216);
+    background-color: $color-primario;
     div{
         a{
             img{
@@ -279,13 +288,13 @@
     }
 }
 .servicios{
-    background-color: blanchedalmond;
+    background-color: $color-terciario;
     height: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     p{
-        color: black;
+        color: $color-cuarto;
         font-family: cursive;
         font-size: 20px;
         width: 50%;
@@ -302,7 +311,7 @@
     grid-auto-rows: 150px;
     gap: 5px;  
     padding: 5px;
-    background-color: rgb(23, 203, 216);
+    background-color: $color-primario;
     div{
         iframe{
             width: 100%;
@@ -317,8 +326,8 @@
         position: absolute;
         bottom: 0;
         text-align: center;
-        color: blanchedalmond;
-        background-color: rgba(17, 200, 224, 0.507);
+        color: $color-terciario;
+        background-color: $color-primario;
         width: 100%;    
     }
 }
@@ -341,7 +350,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    background-color: rgb(23, 203, 216);
+    background-color: $color-primario;
     div{
         a{
             img{
@@ -350,60 +359,115 @@
             }
         }
     }
+    h2{
+    font-size: 30px;
+    color: $color-terciario;
+    font-family: cursive;    }
 }
 /*OFERTAS*/
+.ofertas{
+    h2{
+        text-align: center;
+        background-color: $color-primario;
+        font-family: cursive;
+        font-size: 20px;
+    }
+}
+.ofertas .div1{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    padding: 10px;
+    background-color: $color-terciario;
+    img{
+        border: 2px, solid $color-primario;
+        width: 200px;
+        height: 150px;
+        border: 2px solid $color-primario;
+        border-radius: 15px;
+    }
+    a{
+        text-decoration: none; 
+    }
+    h4{
+        font-family: cursive;
+        font-size: 15px;
+        margin-top: 5px;
+        text-align: center;
+        background-color: $color-primario;
+        border-radius: 10px;  
+    }
+}
+.ofertas .div2{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    padding: 10px;
+    background-color: $color-terciario;
+    img{
+        border: 2px, solid $color-primario;
+        width: 200px;
+        height: 150px;
+        border: 2px solid $color-primario;
+        border-radius: 15px;
+    }
+    a{
+        text-decoration: none;
+    }
+    h4{
+        font-family: cursive;
+        font-size: 15px;
+        margin-top: 5px;
+        text-align: center;
+        background-color: $color-primario;
+        border-radius: 10px;
+    }
+}
+.ofertas .div3{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    padding: 10px;
+    background-color: $color-terciario;
+    img{
+        border: 2px, solid $color-primario;
+        width: 200px;
+        height: 150px;
+        border: 2px solid $color-primario;
+        border-radius: 15px;
+    }
+    a{
+        text-decoration: none; 
+    }
+    h4{
+        font-family: cursive;
+        font-size: 15px;
+        margin-top: 5px;
+        text-align: center;
+        background-color: $color-primario;
+        border-radius: 10px;
+    }
+}
 .parrafo-ofertas{
-    background-color: blanchedalmond;
-    height: 15vh;
+    background-color: $color-terciario;
+    height: 10vh;
     text-align: center;
     p{
         font-family: cursive;
         font-size: 20px;
-        color: blanchedalmond;
+        color: $color-terciario;
         padding-top: 10px;
         padding-bottom: 10px;
-        background-color: rgba(145, 23, 216, 0.877) ;
+        background-color: $color-secundario ;
     }
 }
-.ofertas{
-    background-color: blanchedalmond;
-    width: 100%;
-    height: 300px;
-    h2{
-        text-align: center;
-        background-color:rgb(23, 203, 216);
-        font-family: cursive;
-        font-size: 20px;
-    }
-    .tarjetas{
-        text-align: center;
-        display: flex;
-        justify-content: space-around; 
-        align-items: center;
-        div{
-            img{
-                width: 250px;
-                height: 200px;
-                border: 2px solid rgb(23, 203, 216);
-                border-radius: 15px;
-                margin-top: 20px;   
-            }
-        }
-        div{
-            a{
-                color: blanchedalmond;
-                text-decoration: none; 
-            }
-        }
-        h4{
-            background-color: rgba(23, 203, 216, 0.63);
-            border-radius: 10px;
-            font-family: cursive;
-            font-size: 20px;
-            margin-top: 5px;  
-        }
-    }
-}
+
 /*CONTACTENOS*/
 .navbarcontacto{
     display: flex;
@@ -422,21 +486,34 @@
 /*BOOSTRAP CONTACTENOS*/
 .titulo-formulario{
     text-align: center;
-    background-color: rgba(145, 23, 216, 0.774);
+    background-color: $color-secundario;
     font-family: cursive;
     font-size: 20px;
     h2{
-        color: blanchedalmond;
+        color: $color-terciario;
         height: 7vh;
     }
 }
 .formulario{
     width: 50%;
     justify-content: space-between;
-    border: 2px solid rgba(145, 23, 216, 0.774);
+    border: 2px solid $color-secundario;
     padding: 10px;
-    align-items: center;
     margin-left: 350px;
     margin-bottom: 10px;  
-    background-color: blanchedalmond;
+    background-color: $color-terciario;
+}
+.ubicacion{
+    height: 30%;
+    iframe{
+        width: 100%;
+        height: 30vh;
+    }
+}
+.pienosotros{
+    h2{
+        font-family: cursive;
+        color: $color-terciario;
+        font-size: 30px;
+    }
 }

@@ -7,7 +7,7 @@ footer{
             justify-content: space-around;
             flex-wrap: wrap;
             align-items: center;
-            background-color: rgb(23, 203, 216);
+            background-color: $color-primario;
             div{
                 iframe{
                     width: 300px;
@@ -17,7 +17,7 @@ footer{
             }
             .titulo_pie{
                 font-family: cursive;
-                color: blanchedalmond;
+                color: $color-terciario;
                 margin-right:30px;
             }
             .redes{
